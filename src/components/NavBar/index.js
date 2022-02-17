@@ -8,13 +8,13 @@ const Navbar = () => {
       <img src={require("../../assests/logo.png")} alt="logo" />
       <div className="nav_social_container">
         <span className="nav_social_icon">
-          <BsInstagram />
+          <BsInstagram size={25} color="#A542DD" />
         </span>
         <span className="nav_social_icon">
-          <BsTwitter color="#A542DD" />
+          <BsTwitter size={25} color="#A542DD" />
         </span>
         <span className="nav_social_icon">
-          <FaDiscord />
+          <FaDiscord size={25} color="#A542DD" />
         </span>
       </div>
     </nav>

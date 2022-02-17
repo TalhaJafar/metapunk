@@ -4,7 +4,11 @@ const About = () => {
   return (
     <div className="row d-flex align-items-center section_margin">
       <div className="col-xl-6 col-md-12">
-        <img className="img-fluid" src={require("../../assests/about.png")} />
+        <img
+          className="img-fluid"
+          src={require("../../assests/about.png")}
+          alt="about"
+        />
       </div>
 
       <div className="col-xl-6 col-md-12 pl-5">

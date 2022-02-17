@@ -17,6 +17,7 @@ const Header = () => {
         <img
           className="img-fluid header_img "
           src={require("../../assests/header.png")}
+          alt="header"
         />
       </div>
     </div>

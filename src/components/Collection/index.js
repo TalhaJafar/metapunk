@@ -50,13 +50,13 @@ const Collection = () => {
           <Swiper
             spaceBetween={50}
             slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
           >
             {characters.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <img className="img-fluid" src={item.url} />
+                  <img className="img-fluid" src={item.url} alt="index" />
                 </SwiperSlide>
               );
             })}
