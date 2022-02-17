@@ -5,76 +5,13 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    /* max-width: 1500px; */
-    max-width: 80%;
+    max-width: 1500px;
     width: 95%;
   }
 }
 
 .container {
   padding: 35px 15px;
-}
-
-.heading_1 {
-  font-family: Syne;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 78px;
-  line-height: 94px;
-}
-
-.heading_2 {
-  font-family: Syne;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 77px;
-}
-
-.heading_3 {
-  font-family: Syne;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-.text_1 {
-  font-family: Noto Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 38px;
-}
-
-.text_2 {
-  font-family: Noto Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 140%;
-}
-
-.button_primary {
-  font-family: Syne;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-  padding: 20px 40px;
-  width: fit-content;
-  background: linear-gradient(94.54deg, #a542dd 0%, #da42dd 100%, #da42dd 100%);
-  border: 0px;
-}
-
-.section_margin {
-  margin: 10rem 0rem;
-}
-
-.purple_font {
-  color: #a542dd;
 }
 /* Navbar Styling */
 
@@ -105,37 +42,8 @@ nav {
     #1d2030;
 }
 
-/* End Navbar Styling */
-
-/* Header */
-
-.header_img {
-  max-width: 125%;
-}
-
-/* End Header */
-
-/* About */
-
-/* End About */
-
-/* Collection */
-
-.slider_arrow {
-  width: 70px;
-  height: 70px;
-  border: 1px solid black;
-}
-
-.slider_arrow:hover {
-  border: 0px;
-  background: linear-gradient(135deg, #a542dd 0%, #da42dd 100%, #da42dd 100%);
-  color: #fff;
-}
-
-/* Roadmap */
-
-.timeline {
+/* RoadMap */
+timeline {
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
@@ -271,65 +179,4 @@ nav {
   }
 }
 
-/* End Roadmap */
-
-/* Faq */
-
-#main {
-  margin: 50px 0;
-}
-
-#main #faq .card {
-  margin-bottom: 30px;
-  border: 0;
-}
-
-#main #faq .card .card-header {
-  border: 0;
-  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-  box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-  border-radius: 2px;
-  padding: 0;
-}
-
-#main #faq .card .card-header .btn-header-link {
-  color: #fff;
-  display: block;
-  text-align: left;
-  background: #ffe472;
-  color: #222;
-  padding: 20px;
-}
-
-#main #faq .card .card-header .btn-header-link:after {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  float: right;
-}
-
-#main #faq .card .card-header .btn-header-link.collapsed {
-  background: #a541bb;
-  color: #fff;
-}
-
-#main #faq .card .card-header .btn-header-link.collapsed:after {
-  content: "\f106";
-}
-
-#main #faq .card .collapsing {
-  background: #ffe472;
-  line-height: 30px;
-}
-
-#main #faq .card .collapse {
-  border: 0;
-}
-
-#main #faq .card .collapse.show {
-  background: #ffe472;
-  line-height: 30px;
-  color: #222;
-}
-
-/* End Faq */
+/* RoadMap */
