@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const RoadmapList = [
   {
@@ -37,7 +38,7 @@ const RoadmapList = [
 
 const Roadmap = () => {
   return (
-    <div className="row d-flex align-items-center justify-content-center flex-column">
+    <div className="roadmap-sec row d-flex align-items-center justify-content-center flex-column">
       <div className="heading_2 purple_font">RoadMap</div>
       <div class="timeline">
         <ul>
@@ -52,6 +53,12 @@ const Roadmap = () => {
                   class="time "
                   style={index < 2 ? { color: "#30C53F" } : { color: "black" }}
                 >
+                  <div
+                    className="row"
+                    style={{ position: "relative", width: "500px" }}
+                  >
+                    <span className={"roadmap_star_" + (index + 1)}></span>
+                  </div>
                   <div>{item.percentage}</div>
                 </div>
               </li>

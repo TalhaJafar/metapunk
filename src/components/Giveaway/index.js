@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const giveawaysList = [
   {
@@ -30,7 +31,7 @@ const giveawaysList = [
 const Giveaway = () => {
   return (
     <>
-      <div className="section_margin d-flex align-items-center justify-content-center flex-column">
+      <div className="giveaway-sec section_margin d-flex align-items-center justify-content-center flex-column">
         <div className="purple_font heading_1">Giveaways</div>
         <div className="row mt-5">
           {giveawaysList.map((item, index) => {

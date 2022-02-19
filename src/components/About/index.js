@@ -1,8 +1,9 @@
 import React from "react";
+import "./index.css";
 
 const About = () => {
   return (
-    <div className="row d-flex align-items-center section_margin">
+    <div className="about-sec row d-flex align-items-center section_margin">
       <div className="col-xl-6 col-md-12">
         <img
           className="img-fluid"

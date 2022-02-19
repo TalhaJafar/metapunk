@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const faqsList = [
   {
@@ -29,7 +30,7 @@ const faqsList = [
 
 export default function Faqs() {
   return (
-    <div id="main" className="section_margin">
+    <div id="main" className="faq-sec section_margin">
       <div className=" heading_2 text-center mb-5">
         Frequently Asked Questions
       </div>

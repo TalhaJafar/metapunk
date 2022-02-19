@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -19,7 +20,7 @@ body {
   font-family: Syne;
   font-style: normal;
   font-weight: 800;
-  font-size: 78px;
+  font-size: 72px;
   line-height: 94px;
 }
 
@@ -118,7 +119,7 @@ nav {
 /* Header */
 
 .header_img {
-  max-width: 125%;
+  /* max-width: 125%; */
 }
 
 /* End Header */
@@ -147,7 +148,7 @@ nav {
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
-  width: 1005;
+  width: 100%;
   box-sizing: border-box;
 }
 .timeline:before {
@@ -169,6 +170,7 @@ nav {
   padding: 20px 40px;
   box-sizing: border-box;
   background-color: #ffffff;
+  margin: 0px -2px;
 }
 .timeline ul li:nth-child(odd) {
   float: left;
@@ -184,27 +186,36 @@ nav {
   padding-bottom: 20px;
   text-align: left;
 }
+
 .timeline ul li:nth-child(odd):before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 24px;
-  right: -6px;
-  background: rgba(233, 33, 99, 1);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  right: -8px;
 }
 .timeline ul li:nth-child(even):before {
+  left: -6px;
+}
+
+.timeline ul li:nth-child(-n + 2):before {
   content: "";
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 24px;
-  left: -4px;
-  background: rgba(233, 33, 99, 1);
+  top: 50%;
+  /* right: -6px; */
+  background: rgb(48, 197, 63);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  box-shadow: 0 0 0 3px rgba(48, 197, 63, 0.2);
+}
+
+.timeline ul li:nth-child(n + 3):before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  /* left: -4px; */
+  background: black;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
 .timeline ul li .time div {
@@ -218,7 +229,7 @@ nav {
 }
 .timeline ul li:nth-child(odd) .time {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: -250px;
   /* margin: 0; */
   padding: 8px 16px;
@@ -228,7 +239,7 @@ nav {
 }
 .timeline ul li:nth-child(even) .time {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: -250px;
   /* margin: 0; */
   padding: 8px 16px;
@@ -242,24 +253,57 @@ nav {
   }
 }
 @media (max-width: 767px) {
+  .content {
+    background-color: #fff;
+    padding: 20px;
+  }
   .timeline {
     width: 100%;
     padding-bottom: 0;
   }
-  h1 {
+  /* .heading_1,
+  .heading_2,
+  .heading_3 {
     font-size: 40px;
     text-align: center;
-  }
+  } */
   .timeline:before {
     left: 20px;
     height: 100%;
   }
+
+  .timeline ul li:nth-child(-n + 2):before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -8px;
+    background: rgb(48, 197, 63);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(48, 197, 63, 0.2);
+  }
+
+  .timeline ul li:nth-child(n + 3):before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -8px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  }
+
   .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even) {
     width: 100%;
     text-align: left;
     padding-left: 50px;
     padding-bottom: 50px;
+    /* margin: 0px 50px; */
+    background-color: transparent;
   }
   .timeline ul li:nth-child(odd):before,
   .timeline ul li:nth-child(even):before {
@@ -268,9 +312,30 @@ nav {
   }
   .timeline ul li:nth-child(odd) .time,
   .timeline ul li:nth-child(even) .time {
-    top: -30px;
+    top: -60px;
     left: 50px;
     right: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading_1 {
+    font-size: 48px;
+    /* text-align: center; */
+  }
+
+  .heading_2 {
+    font-size: 40px;
+    /* text-align: center; */
+  }
+
+  .heading_3 {
+    font-size: 36px;
+    /* text-align: center; */
+  }
+
+  .w-50 {
+    width: 75%;
   }
 }
 

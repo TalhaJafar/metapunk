@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 // import { useSwiper } from "swiper/react";
@@ -25,7 +26,7 @@ const Collection = () => {
   const swiper = useSwiper();
   return (
     <>
-      <div className="section_margin">
+      <div className="popular-sec section_margin">
         <div className="row d-flex align-items-center justify  ">
           <div className="col-xl-10 col-sm-12">
             <div className="heading_3">Our most unique collection</div>
@@ -34,6 +35,7 @@ const Collection = () => {
               unique.
             </div>
           </div>
+
           <div className="col-xl-2 col-sm-3 d-flex justify-content-around">
             <span className="slider_arrow d-flex align-items-center justify-content-center">
               <BsArrowLeft size={25} />
@@ -45,6 +47,10 @@ const Collection = () => {
               <BsArrowRight size={25} />
             </span>
           </div>
+        </div>
+        <div className="row" style={{ position: "relative" }}>
+          <span className="collection_star_1"></span>
+          <span className="collection_star_2"></span>
         </div>
         <div className="row mt-5">
           <Swiper
@@ -62,6 +68,10 @@ const Collection = () => {
             })}
             ...
           </Swiper>
+        </div>
+        <div className="row" style={{ position: "relative" }}>
+          <span className="collection_star_3"></span>
+          <span className="collection_star_4"></span>
         </div>
       </div>
     </>

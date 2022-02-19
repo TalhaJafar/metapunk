@@ -1,10 +1,15 @@
 import React from "react";
+import "./index.css";
 
 const Header = () => {
   return (
-    <div className="row d-flex align-item-center section_margin">
-      <div className="col-xl-7 col-lg-12 d-flex align-items-center">
-        <div className="d-flex flex-column">
+    <div className="hero-main row d-flex align-item-center section_margin ">
+      <span className="header_star_1"></span>
+      <span className="header_star_2"></span>
+      <span className="header_star_3"></span>
+      <span className="header_star_4"></span>
+      <div className="col-xl-7 col-lg-12 d-flex align-items-center ">
+        <div className="d-flex flex-column ">
           <h1 className="heading_1">Welcome to Metapunks</h1>
           <p className="text_1 mt-3 mb-5">
             Blandit massa, sollicitudin duis arcu sagittis augue gravida.

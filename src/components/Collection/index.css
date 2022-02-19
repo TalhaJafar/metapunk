@@ -1,0 +1,90 @@
+.popular-sec {
+  position: relative;
+}
+
+.popular-sec::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #3eff51;
+  filter: blur(200px);
+  right: -250px;
+  top: -100px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.popular-sec::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #ffd53e;
+  filter: blur(200px);
+  left: -300px;
+  top: -200px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.collection_star_1 {
+  position: absolute;
+  left: 60%;
+  right: 0px;
+  top: 0%;
+  bottom: 0%;
+  width: 100px;
+  height: 100px;
+  background-size: 75px;
+  background-image: url("../../assests/thinsmooth.png");
+  background-repeat: no-repeat;
+}
+
+.collection_star_2 {
+  position: absolute;
+  left: -150px;
+  right: 0%;
+  top: 0px;
+  bottom: 0%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../../assests/thin.png");
+  background-repeat: no-repeat;
+}
+
+.collection_star_3 {
+  position: absolute;
+  left: -150px;
+  right: 0%;
+  top: 105%;
+  bottom: 0%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../assests/thinsmooth.png");
+  background-repeat: no-repeat;
+}
+
+.collection_star_4 {
+  position: absolute;
+  /* left: 090%; */
+  right: 0%;
+  top: 5%;
+  bottom: 0%;
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-image: url("../../assests/plain.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .collection_star_1,
+  .collection_star_2,
+  .collection_star_3,
+  .collection_star_4 {
+    display: none;
+  }
+}

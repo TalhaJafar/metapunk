@@ -1,0 +1,32 @@
+.footer_star_1 {
+  position: absolute;
+  left: 90%;
+  right: 0%;
+  top: -150px;
+  bottom: 0%;
+  width: 80px;
+  height: 80px;
+  background-size: 80px;
+  background-image: url("../../assests/wide_white.png");
+  background-repeat: no-repeat;
+}
+
+.footer_star_2 {
+  position: absolute;
+  left: 5%;
+  right: 0%;
+  top: -100px;
+  bottom: 0%;
+  width: 80px;
+  height: 80px;
+  background-size: 80px;
+  background-image: url("../../assests/plain_white.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .footer_star_1,
+  .footer_star_2 {
+    display: none;
+  }
+}

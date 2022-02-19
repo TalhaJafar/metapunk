@@ -1,0 +1,82 @@
+.hero-main {
+  position: relative;
+}
+
+.hero-main::after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 100%;
+  background-color: #f07474;
+  filter: blur(150px);
+  right: -300px;
+  top: -400px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.hero-main::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 100%;
+  background-color: #97baff;
+  filter: blur(200px);
+  left: -300px;
+  top: -200px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.header_star_1 {
+  position: absolute;
+  left: -150px;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url("../../assests/thinsmooth.png");
+  background-repeat: no-repeat;
+}
+
+.header_star_2 {
+  position: absolute;
+  left: 35%;
+  right: 0%;
+  top: -150px;
+  bottom: 0%;
+  background-image: url("../../assests/thin.png");
+  background-repeat: no-repeat;
+}
+
+.header_star_3 {
+  position: absolute;
+  left: -150px;
+  right: 0%;
+  top: 105%;
+  bottom: 0%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../assests/wide.png");
+  background-repeat: no-repeat;
+}
+
+.header_star_4 {
+  position: absolute;
+  left: 91%;
+  right: 0px;
+  top: 5%;
+  bottom: 0%;
+  background-image: url("../../assests/plain.png");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .header_star_1,
+  .header_star_2,
+  .header_star_3,
+  .header_star_4 {
+    display: none;
+  }
+}
