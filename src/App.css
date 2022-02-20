@@ -6,9 +6,18 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    /* max-width: 1500px; */
     max-width: 80%;
     width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .w-50 {
+    width: 75% !important;
   }
 }
 
@@ -320,22 +329,25 @@ nav {
 
 @media (max-width: 767px) {
   .heading_1 {
-    font-size: 48px;
-    /* text-align: center; */
+    font-size: calc(clamp(26px, 1vw + 26px, 48px));
   }
 
   .heading_2 {
-    font-size: 40px;
+    font-size: calc(clamp(24px, 1vw + 24px, 40px));
     /* text-align: center; */
   }
 
   .heading_3 {
-    font-size: 36px;
+    font-size: calc(clamp(20px, 1vw + 20px, 36px));
     /* text-align: center; */
   }
 
-  .w-50 {
-    width: 75%;
+  .text_1 {
+    font-size: calc(clamp(16px, 1vw + 16px, 20px));
+  }
+
+  .text_2 {
+    font-size: calc(clamp(14px, 1vw + 14px, 18px));
   }
 }
 

@@ -87,4 +87,10 @@
   .collection_star_4 {
     display: none;
   }
+
+  .popular-sec::before,
+  .popular-sec::after {
+    display: none;
+    position: unset;
+  }
 }

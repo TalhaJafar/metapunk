@@ -40,14 +40,16 @@ const Giveaway = () => {
                 className="col-xl-6 col-lg-12 col-md-12 mb-5 d-flex align-items-center"
                 key={index}
               >
-                <img
-                  className="img-fluid p-5"
-                  src={item.icon}
-                  alt={"school" + index}
-                />
-                <div>
-                  <div className="mb-4 heading_4">{item.header}</div>
-                  <div className="text_2">{item.description}</div>
+                <div className="row d-flex align-items-center justify-content-center">
+                  <img
+                    className=" img-fluid p-5"
+                    src={item.icon}
+                    alt={"school" + index}
+                  />
+                  <div className="col-xl-6 col-lg-12 col-md-12 text-xl-left text-lg-center text-sm-center">
+                    <div className="mb-4 heading_4">{item.header}</div>
+                    <div className="text_2">{item.description}</div>
+                  </div>
                 </div>
               </div>
             );

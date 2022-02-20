@@ -88,4 +88,10 @@
   .roadmap_star_4 {
     display: none;
   }
+
+  .roadmap-sec::before,
+  .roadmap-sec::after {
+    display: none;
+    position: unset;
+  }
 }

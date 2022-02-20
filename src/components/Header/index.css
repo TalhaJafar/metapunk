@@ -79,4 +79,10 @@
   .header_star_4 {
     display: none;
   }
+
+  .hero-main::before,
+  .hero-main::after {
+    display: none;
+    position: unset;
+  }
 }
