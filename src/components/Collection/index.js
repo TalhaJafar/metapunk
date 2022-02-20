@@ -36,12 +36,12 @@ const Collection = () => {
             </div>
           </div>
 
-          <div className="col-xl-2 col-sm-3 d-flex justify-content-around">
-            <span className="slider_arrow d-flex align-items-center justify-content-center">
+          <div className="col-xl-2 col-sm-3 d-flex justify-content-end mt-5">
+            <span className="slider_arrow d-flex align-items-center justify-content-center mr-2">
               <BsArrowLeft size={25} />
             </span>
             <span
-              className="slider_arrow d-flex align-items-center justify-content-center"
+              className="slider_arrow d-flex align-items-center justify-content-center ml-2"
               onClick={() => swiper.slideNext()}
             >
               <BsArrowRight size={25} />

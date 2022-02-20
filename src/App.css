@@ -127,9 +127,9 @@ nav {
 
 /* Header */
 
-.header_img {
-  /* max-width: 125%; */
-}
+/* .header_img { */
+/* max-width: 125%; */
+/* } */
 
 /* End Header */
 
@@ -330,24 +330,34 @@ nav {
 @media (max-width: 767px) {
   .heading_1 {
     font-size: calc(clamp(26px, 1vw + 26px, 48px));
+    line-height: 48px;
   }
 
   .heading_2 {
     font-size: calc(clamp(24px, 1vw + 24px, 40px));
+    line-height: 45px;
     /* text-align: center; */
   }
 
   .heading_3 {
     font-size: calc(clamp(20px, 1vw + 20px, 36px));
+    line-height: 40px;
     /* text-align: center; */
   }
 
   .text_1 {
     font-size: calc(clamp(16px, 1vw + 16px, 20px));
+    line-height: normal;
   }
 
   .text_2 {
     font-size: calc(clamp(14px, 1vw + 14px, 18px));
+    line-height: normal;
+  }
+
+  .slider_arrow {
+    width: 40px;
+    height: 40px;
   }
 }
 
