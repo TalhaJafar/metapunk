@@ -359,6 +359,15 @@ nav {
     width: 40px;
     height: 40px;
   }
+
+  .nav_social_container {
+    width: 150px;
+  }
+
+  .nav_social_icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* End Roadmap */
@@ -387,7 +396,7 @@ nav {
   padding: 20px;
 }
 
-#main #faq .card .card-header .btn-header-link:after {
+#main #faq .card .card-header .btn-header-link .heading_4:after {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -399,7 +408,7 @@ nav {
   color: black;
 }
 
-#main #faq .card .card-header .btn-header-link.collapsed:after {
+#main #faq .card .card-header .btn-header-link.collapsed .heading_4:after {
   content: "\f106";
 }
 

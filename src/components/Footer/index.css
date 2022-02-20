@@ -29,4 +29,9 @@
   .footer_star_2 {
     display: none;
   }
+
+  .footer_links_box {
+    height: 70px;
+    width: 70px;
+  }
 }

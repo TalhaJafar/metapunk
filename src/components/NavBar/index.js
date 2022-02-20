@@ -4,7 +4,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="row">
+    <nav className="row m-0">
       <img src={require("../../assests/logo.png")} alt="logo" />
       <div className="nav_social_container">
         <span className="nav_social_icon">

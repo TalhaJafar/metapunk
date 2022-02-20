@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const faqsList = [
   {
@@ -48,7 +49,9 @@ export default function Faqs() {
                     aria-expanded="true"
                     aria-controls={"faq" + index}
                   >
-                    <div className="heading_4">{item.question}</div>
+                    <div className="heading_4">{item.question} </div>
+                    {/* <FaChevronUp />
+                    <FaChevronDown /> */}
                   </a>
                 </div>
 

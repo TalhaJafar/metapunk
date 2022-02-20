@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+// import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 // import { useSwiper } from "swiper/react";
 
@@ -23,7 +23,7 @@ const characters = [
 ];
 
 const Collection = () => {
-  const swiper = useSwiper();
+  // const swiper = useSwiper();
   return (
     <>
       <div className="popular-sec section_margin">
@@ -37,7 +37,7 @@ const Collection = () => {
           </div>
 
           <div className="col-xl-2 col-sm-3 d-flex justify-content-end mt-5">
-            <span className="slider_arrow d-flex align-items-center justify-content-center mr-2">
+            {/* <span className="slider_arrow d-flex align-items-center justify-content-center mr-2">
               <BsArrowLeft size={25} />
             </span>
             <span
@@ -45,7 +45,7 @@ const Collection = () => {
               onClick={() => swiper.slideNext()}
             >
               <BsArrowRight size={25} />
-            </span>
+            </span> */}
           </div>
         </div>
         <div className="row" style={{ position: "relative" }}>
