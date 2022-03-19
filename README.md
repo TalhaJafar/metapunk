@@ -1,4 +1,4 @@
-# Live Preview at 
+# Live Preview
 
 https://determined-lamarr-d1f746.netlify.app/
 
